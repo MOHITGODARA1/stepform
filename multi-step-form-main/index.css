@@ -1,0 +1,345 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+:root{
+   --text-colour:rgb(241, 236, 236);
+   --font-family: "Roboto", sans-serif;
+   --error-colour:rgb(220, 31, 31);
+}
+.container{
+   background-color: rgb(226, 225, 223);
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.allcontent{
+   height: 80%;
+   width: 60%;
+   display: flex;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 10px 10px 10px black;
+   border-radius: 5px;
+}
+/* imagesection */
+.left-phot-secction{
+   width: 34%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.left-stepsection{
+   height: 94%;
+   width: 90%;
+   background-image: url(assets/images/bg-sidebar-desktop.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 5px;
+   background-size: cover;
+}
+.firststep{
+   /* background-color: aqua; */
+   height: 15%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.circlesection{
+   height: 40px;
+   /* background-color: rgb(41, 59, 59); */
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   width: 35%;
+   /* border-radius: 50%; */
+}
+.count{
+   color: var(--text-colour);
+}
+.forcircle{
+   height: 100%;
+   width: 40px;
+   border-radius: 50%;
+   border: 1px solid var(--text-colour);
+   /* background-color: aquamarine; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.formtype{
+   width: 65%;
+}
+.info-section{
+   padding-left: 12px;
+   font-size: 18px;
+   color: var(--text-colour);
+   font-family: "Roboto", sans-serif;
+}
+
+/* first-right-form-section */
+.firstformrightsection{
+   width: 66%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+}
+.innerrightsection{
+   height: 100%;
+   width: 82%;
+   display: block;
+}
+.personal{
+   font-family: var(--font-family);
+   color: rgb(45, 45, 174);
+}
+.provideinfo{
+   font-family: var(--font-family);
+   color: rgba(0, 0, 0, 0.426);
+}
+.rightsectionfirstsection{
+   height: 20%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.name-section{
+   height: 17%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.uppernamesection{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 40%;
+}
+.displayname{
+   font-family: var(--font-family);
+   padding-left: 7px;
+}
+.nameerror{
+   font-family: var(--font-family);
+   padding-right: 7px;
+   color: var(--error-colour);
+   font-size: 15px;
+   display: none;
+}
+.emailerror{
+   font-family: var(--font-family);
+   padding-right: 7px;
+   color: var(--error-colour);
+   font-size: 15px;
+   display: none;
+}
+.lowernamesection{
+   height: 80%;
+   width: 100%;
+}
+.nameinputsection{
+   width: 98%;
+   margin-left: 7px;
+   height: 40px;
+   border: 1px solid black;
+   /* outline: 1px solid rgb(9, 227, 9); */
+   outline: none;
+   border-radius: 5px;
+   padding-left: 3px;
+}
+
+.nextbutton{
+   height: 29%;
+   width: 100%;
+   display: flex;
+   justify-content: end;
+   align-items: end;
+}
+.first-next-button{
+   margin-bottom: 50px;
+    margin-right: 38px;
+    height: 40px;
+    width: 112px;
+    background-color: rgb(52, 42, 98);
+    color: var(--text-colour);
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+}
+
+/* second step */
+.innerpart2{
+   height: 100%;
+   width: 85%;
+   display: none;
+}
+.alloption{
+   height: 27%;
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 10px;
+}
+.firstoption{
+   height: 100%;
+   width: 29%;
+   border-radius: 5px;
+   border: 1px solid rgba(0, 0, 0, 0.429);
+   cursor: pointer;
+   transition: all 0.4s ease;
+}
+.firstoption:hover{
+   background-color: rgba(0, 0, 0, 0.295);
+}
+.firstoptionimage{
+   height: 40%;
+   display: flex;
+   align-items: end;
+}
+.arcade{
+   margin-left: 5px;
+}
+.options{
+   height: 60%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+}
+.ammount{
+   margin-left: 10px;
+   margin-bottom: 5px;
+   font-size: 16px;
+   color: rgba(0, 0, 0, 0.426);
+}
+.arcade{
+   font-family: var(--font-family);
+   margin-left: 10px;
+   margin-bottom: 7px;
+}
+.slidebar{
+   height: 25%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.mainslidebar{
+   height: 45px;
+   border-radius: 5px;
+   width: 95%;
+   background-color: antiquewhite;
+}
+.seconbuttondiv{
+   height: 26%;
+   width: 100%;
+   display: flex;
+}
+.fornextbutton{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: end;
+   align-items: end;
+}
+.secondgoback{
+   margin-left: 10px;
+   margin-bottom: 40px;
+    height: 40px;
+    width: 112px;
+    background-color: rgb(52, 42, 98);
+     color: var(--text-colour);
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.gobackbutton{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   align-items: end;
+}
+.secondnext{
+   margin-bottom: 40px;
+   margin-right: 38px;
+    height: 40px;
+    width: 112px;
+    background-color: rgb(52, 42, 98);
+    color: var(--text-colour);
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.billing-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: sans-serif;
+  font-weight: 600;
+  justify-content: center;
+  background-color: #f5f7ff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.billing-toggle span {
+  color: gray;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.billing-toggle span.active {
+  color: #02295a;
+}
+
+/* Toggle Switch Styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #02295a;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider::before {
+  transform: translateX(20px);
+}

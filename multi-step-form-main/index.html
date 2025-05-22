@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+SA:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="allcontent">
+      <!-- left side bar desktop image section -->
+      <div class="left-phot-secction">
+        <div class="left-stepsection">
+          <div class="firststep">
+            <div class="circlesection">
+              <div class="forcircle">
+                <p class="count" id="yourinfo">1</p>
+              </div>
+            </div>
+            <div class="formtype">
+              <p class="info-section">YOUR INFO</p>
+            </div>
+          </div>
+          <div class="firststep">
+            <div class="circlesection">
+              <div class="forcircle" id="secondcircle">
+                <p class="count" id="selectplan">2</p>
+              </div>
+            </div>
+            <div class="formtype">
+              <p class="info-section">SELECT PLAN</p>
+            </div>
+          </div>
+          <div class="firststep">
+            <div class="circlesection">
+              <div class="forcircle" id="thirdcircle">
+                <p class="count" id="addon">3</p>
+              </div>
+            </div>
+            <div class="formtype">
+              <p class="info-section">ADD-ONS</p>
+            </div>
+          </div>
+          <div class="firststep">
+            <div class="circlesection">
+              <div class="forcircle" id="fourthcircle">
+                <p class="count" id="summary">4</p>
+              </div>
+            </div>
+            <div class="formtype">
+              <p class="info-section">SUMMARY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right desktop form -->
+      <div class="firstformrightsection">
+
+        <!-- //first form -->
+        <div class="innerrightsection">
+          <div class="rightsectionfirstsection">
+            <h1 class="personal">Personal info</h1>
+            <p class="provideinfo">please provide your name,email,address,and phone number.</p>
+          </div>
+          <div class="name-section">
+            <div class="uppernamesection">
+              <p class="displayname">name</p>
+              <span class="nameerror" id="nameerror1">This field is required</span>
+            </div>
+            <div class="lowernamesection">
+              <input type="text" placeholder="Enter your name" class="nameinputsection" id="nameinput">
+            </div>
+          </div>
+          <div class="name-section">
+            <div class="uppernamesection">
+              <p class="displayname">Email Address</p>
+              <span class="nameerror" id="emailrequired">This field is required</span>
+              <span class="emailerror">email is not valid</span>
+            </div>
+            <div class="lowernamesection">
+              <input type="email" placeholder="Enter your Email" class="nameinputsection" id="emailinput">
+            </div>
+          </div>
+          <div class="name-section">
+            <div class="uppernamesection">
+              <p class="displayname">Phone Number</p>
+              <span class="nameerror" id="numbererror">This field is required</span>
+            </div>
+            <div class="lowernamesection">
+              <input type="number" placeholder="e.g +1234 567 890" class="nameinputsection" id="numberinput">
+            </div>
+          </div>
+          
+          <div class="nextbutton">
+            <button type="submit" class="first-next-button">Next Step</button>
+          </div>
+        </div>
+
+        <!-- second form -->
+        <div class="innerpart2">
+          <div class="rightsectionfirstsection">
+            <h1 class="personal">Select your plan</h1>
+            <p class="provideinfo">You have option monthly or yearly billing.</p>
+          </div>
+          <div class="alloption">
+            <div class="firstoption" id="firstdiv">
+              <div class="firstoptionimage">
+                <img src="assets/images/icon-arcade.svg" alt="arcade" class="arcade">
+              </div>
+              <div class="options">
+                <h3 class="arcade">Arcade</h3>
+                <p class="ammount" id="firstammount">$9/mo</p>
+              </div>
+            </div>
+            <div class="firstoption" id="seconddiv">
+              <div class="firstoptionimage">
+                <img src="assets/images/icon-advanced.svg" alt="arcade" class="arcade">
+              </div>
+              <div class="options">
+                <h3 class="arcade">Advanced</h3>
+                <p class="ammount" id="secondammount">$12/mo</p>
+              </div>
+            </div>
+            <div class="firstoption" id="thirddiv">
+              <div class="firstoptionimage">
+                <img src="assets/images/icon-pro.svg" alt="arcade" class="arcade">
+              </div>
+              <div class="options">
+                <h3 class="arcade">Pro</h3>
+                <p class="ammount" id="thirdammount">$15/mo</p>
+              </div>
+            </div>
+          </div>
+          <div class="slidebar">
+            <div class="mainslidebar">
+              <div class="billing-toggle">
+                <span id="monthly" class="active">Monthly</span>
+                <label class="switch">
+                <input type="checkbox" id="toggleSwitch">
+                <span class="slider"></span>
+                </label>
+                <span id="yearly">Yearly</span>
+              </div>
+            </div>
+          </div>
+          <div class="seconbuttondiv">
+            <div class="gobackbutton">
+              <button type="submit" class="secondgoback">Go back</button>
+            </div>
+            <div class="fornextbutton">
+              <button type="submit" class="secondnext">Next</button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+     </div>
+
+    </div>
+  </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
