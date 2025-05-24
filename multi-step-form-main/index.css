@@ -7,6 +7,7 @@
    --text-colour:rgb(241, 236, 236);
    --font-family: "Roboto", sans-serif;
    --error-colour:rgb(220, 31, 31);
+   --special-color:rgba(0, 0, 0, 0.426);
 }
 .container{
    background-color: rgb(226, 225, 223);
@@ -147,7 +148,6 @@
    margin-left: 7px;
    height: 40px;
    border: 1px solid black;
-   /* outline: 1px solid rgb(9, 227, 9); */
    outline: none;
    border-radius: 5px;
    padding-left: 3px;
@@ -257,9 +257,10 @@ input[type="number"]::-webkit-outer-spin-button {
    margin-bottom: 40px;
     height: 40px;
     width: 112px;
-    background-color: rgb(52, 42, 98);
-     color: var(--text-colour);
-    border: 1px solid black;
+    /* background-color: rgb(52, 42, 98); */
+    background-color: transparent;
+     color: var(--special-color);
+    border: none;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -342,4 +343,194 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input:checked + .slider::before {
   transform: translateX(20px);
+}
+
+
+/* third dection */
+.thirdinnersection{
+   height: 100%;
+   width: 85%;
+   display: none;
+}
+#firstcheckbox{
+   height: 20px;
+   width: 20px;
+   cursor: pointer;
+}
+#secondcheckbox{
+   height: 20px;
+   width: 20px;
+   cursor: pointer;
+}
+#thirdcheckbox{
+   height: 20px;
+   width: 20px;
+   cursor: pointer;
+}
+.checkboxone{
+   height: 13%;
+   margin-top: 15px;
+   width: 90%;
+   /* margin-left: 5%; */
+   border-radius: 5px;
+   background-color: #f5f7ff;
+   display: flex;
+   cursor: pointer;
+   transition: all 0.4s ease;
+
+}
+.checkboxone:hover{
+   background-color: #345c8e5e;
+}
+.checkboxdiv{
+   height: 100%;
+   width: 20%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.online{
+   font-family: var(--font-family);
+   margin-left: 10px;
+   font-size: 20px;
+}
+.feature{
+   font-family: var(--font-family);
+   color: var(--special-color);
+   margin-left: 10px;
+   font-size: 15px;
+}
+.optionname{
+   width: 60%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.pickammountsection{
+   height: 100%;
+   width: 20%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.pickammount{
+   color: #3c7cca;
+}
+.thirdbutton{
+   height: 32%;
+   width: 100%;
+   display: flex;
+}
+
+
+/* fourth part */
+.fourthinnersection{
+   height: 100%;
+   width: 90%;
+   display: none;
+   
+}
+.ammounts{
+   /* height: 100px; */
+   width: 100%;
+   background-color: #3f8eef52;;
+   margin-top: 20px;
+   border-radius: 5px;
+}
+.firstcharg{
+   display: flex;
+   height: 55px;
+}
+.namecharge{
+   margin-left: 30px;
+}
+.chageprice{
+   margin-right: 30px;
+   margin-top: 3px;
+   color: #1c48df;
+}
+.chargename{
+   width: 50%;
+   height: 100%;
+   
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+p .namecharge{
+   color: #000000a3;
+}
+hr{
+   width: 90%;
+   color: black;
+   background-color: black;
+   border: 1px solid black;
+   margin-left: 5%;
+}
+.priceofcharge{
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   width: 50%;
+   height: 100%;
+}
+.totalammountsection{
+   height: 60px;
+   width: 100%;
+   display: flex;
+
+}
+.total{
+   display: flex;
+   width: 50%;
+   align-items: center;
+   height: 100%;
+}
+.totalammount{
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   width: 50%;
+   height: 100%;
+}
+.totalname{
+   margin-left: 20px;
+   font-family: var(--font-family);
+
+}
+.totalam{
+   margin-right: 20px;
+   color: #000000a3;
+}
+.fourthbutton{
+   height: 32%;
+   width: 100%;
+   display: flex;
+}
+
+/* fifthdiv */
+
+.fifthdiv{
+   height: 100%;
+   width: 80%;
+   display: none;
+}
+.allfifth{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /* text-align: center; */
+}
+.Thanku{
+   margin-top: 15px;
+   font-family: var(--font-family);
+}
+.thankyoumessage{
+   margin-top: 15px;
+   text-align: center;
+   color: var(--special-color);
 }
